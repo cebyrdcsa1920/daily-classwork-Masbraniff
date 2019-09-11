@@ -1,45 +1,54 @@
-public class House
+import java.awt.Color;
+
+public class Car
 {
-    private  String Build;
-    private Color Color;
-    private int numOccupants;
-    private double amountOfAcres;
+    private String model;
+    private Color color;
+    private int numPassengers;
+    private double amountOfGas;
+    private final double mpg;
 
-    public House()
+    public Car()
     {
-        build = "Two Story";
-        color = Color.RED;
-        numOccupants = 3;
-        amountOfAcres = 12.5;
-    }
-    public static void main(String[] args)
-    {
-       return "Its my house i can do what i want to";
-    }
-    public void drive(double distance)
-    {
-        amountOfGas -= distance / mpg;
+        model = "Mustang";
+        color = Color.YELLOW;
+        numPassengers = 2;
+        amountOfGas = 12.5;
+        mpg = 15.0;
     }
 
-       /**
-        * Gets the amount of gas in the tank
-        *
-        * @return amount of gas
-        * /
-
-        public double getAmountOfGas()
-        {
-            return amountOfGas;
-        }
+    public String toString()
+    {
+        return "This is my Mustang";
+    }
 
     /**
-     * Fills up the gas tank
+     * Drives the car the given distane. Subtracts gas from the tank
      *
-     * @param amount of
-     */
-    public void fillUpGasTank(double amount)
-    {
-        amountOfGas += amount;
-    }
+     * @param distance the distance driben in miles
+     * */
+     public void drive(double distance)
+     {
+         amountOfGas -= distance / mpg;
+     }
 
+    /**
+     * Gets the amount of gas in the tank
+     * @return amount of gas
+     */
+
+     public double getAmountOfGas()
+     {
+         return amountOfGas;
+     }
+
+     /**
+      * Fills up the gas tank
+      * @param amount gas to add to tank
+      */
+
+      public void fillUpGasTank(double amount)
+      {
+          amountOfGas += amount;
+      }
 }
