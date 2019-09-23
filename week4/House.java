@@ -25,7 +25,7 @@ public class House
         * Gets the amount of gas in the tank
         *
         * @return amount of gas
-        * /
+        */
 
         public double getAmountOfGas()
         {

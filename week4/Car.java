@@ -26,7 +26,7 @@ public class Car
      * Drives the car the given distane. Subtracts gas from the tank
      *
      * @param distance the distance driben in miles
-     * */
+     */
      public void drive(double distance)
      {
          amountOfGas -= distance / mpg;
